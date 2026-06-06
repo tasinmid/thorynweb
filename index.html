@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thoryn — The Private, General-Purpose AI Assistant for Everyone</title>
+  <meta name="description" content="Replaces ChatGPT and Claude. Thoryn is a secure, personal AI assistant that remembers you, creates print-ready PDFs, builds slides, automates schedules, and chats via WhatsApp and Telegram.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="thoryn_logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Orbs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo-link">
+        <img src="thoryn_logo.png" alt="Thoryn Logo" class="nav-logo">
+        <span class="logo-text">Thoryn</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#features" class="nav-item">How it Helps</a>
+        <a href="#addons" class="nav-item">Addons</a>
+        <a href="#compare" class="nav-item">The Difference</a>
+        <a href="#consolidation" class="nav-item">Why Thoryn</a>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#register" class="btn btn-primary btn-sm">Get Early Access</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-wrapper">
+            <span class="hero-badge">More than Chatgpt & Claude</span>
+          </div>
+          <h1 class="hero-title">The last AI subscription <span class="gradient-text">you will ever need.</span></h1>
+          <p class="hero-subtitle">
+            Tired of starting every AI conversation from scratch? Thoryn is a private, general-purpose AI assistant. It remembers your preferences, plans vacations, writes printable PDFs, designs slides, runs daily alerts, and texts you directly on WhatsApp or Telegram.
+          </p>
+          <div class="hero-actions">
+            <a href="#register" class="btn btn-primary">Secure Your AI Assistant</a>
+          </div>
+          <div class="hero-social-proof">
+            <div class="avatar-group">
+              <span class="avatar" style="background-color: #8b5cf6;">A</span>
+              <span class="avatar" style="background-color: #06b6d4;">M</span>
+              <span class="avatar" style="background-color: #10b981;">T</span>
+              <span class="avatar" style="background-color: #f59e0b;">S</span>
+            </div>
+            <p class="social-proof-text">Join <strong>1,800+</strong> families, students, and creators securing early slots.</p>
+          </div>
+        </div>
+        
+        <!-- Animated Hero Visual (CSS Agent Cards) -->
+        <div class="hero-visual">
+          <div class="floating-card task-card-float animate-float-1" style="width: 300px;">
+            <div class="floating-card-header">
+              <div class="circle red"></div>
+              <div class="circle yellow"></div>
+              <div class="circle green"></div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); margin-left: auto; font-family: var(--font-mono);">THORYN_CORE</span>
+            </div>
+            <div class="floating-card-body">
+              <div class="task-item-mock">
+                <span class="checkbox-mock checked">✓</span>
+                <span class="task-title-mock line-through">Research healthy recipes</span>
+              </div>
+              <div class="task-item-mock active">
+                <span class="checkbox-mock spinner"></span>
+                <span class="task-title-mock">Compiling printable PDF meal planner</span>
+                <span class="task-timer-mock">PDF</span>
+              </div>
+              <div class="task-item-mock">
+                <span class="checkbox-mock"></span>
+                <span class="task-title-mock">Design weekly slides</span>
+                <span class="task-timer-mock" style="background: rgba(245, 158, 11, 0.1); color: var(--color-warning);">PENDING</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="floating-card stat-card-float animate-float-2" style="width: 220px;">
+            <p class="stat-label">Connected Apps & Preferences</p>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem;">
+                <span>📅 Google Calendar</span>
+                <span class="text-success" style="font-weight: 600;">CONNECTED</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem;">
+                <span>🍳 Recipes & Nutrition</span>
+                <span class="text-success" style="font-weight: 600;">ACTIVE</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem;">
+                <span>🔒 Family Memory Vault</span>
+                <span class="text-success" style="font-weight: 600;">SECURED</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="floating-card telegram-card-float animate-float-3" style="width: 330px;">
+            <div class="telegram-header">
+              <span class="tg-avatar" style="background-color: #25d366;">W</span>
+              <div class="tg-meta">
+                <p class="tg-name">Thoryn Assistant</p>
+                <p class="tg-status" style="color: #25d366;">whatsapp online</p>
+              </div>
+            </div>
+            <div class="telegram-msg">
+              <p>📄 <strong>Planning Done:</strong> I've created your printable workout plan PDF and weekly menu slides. Check your inbox!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Features Section — Compact Grid -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="features-kicker">
+            <span class="features-kicker-dot"></span>
+            <span>Built for Real Life</span>
+          </div>
+          <h2 class="section-title">Designed for <span class="gradient-text">Your Everyday Life</span></h2>
+          <p class="section-subtitle">One AI that handles memory, research, documents, and messaging — so you never have to repeat yourself again.</p>
+        </div>
+
+        <div class="features-compact-grid">
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(139,92,246,0.1); color: #8b5cf6;">🧠</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">Secured Memory</h3>
+              <p class="feature-desc-v3">Thoryn remembers your style, goals, and preferences forever. No more explaining yourself in every chat.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(6,182,212,0.1); color: #06b6d4;">🔍</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">Deep Web Research</h3>
+              <p class="feature-desc-v3">Real-time browsing to find facts, compare products, and summarize complex news instantly and accurately.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(236, 72, 153, 0.1); color: #ec4899;">📄</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">PDFs & Slide Decks</h3>
+              <p class="feature-desc-v3">Generate printable study guides, formatted PDFs, and professional PowerPoint slides directly from your chat.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(37,211,102,0.1); color: #25d366;">💬</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">WhatsApp & Telegram</h3>
+              <p class="feature-text-v3">Talk to your AI on your phone through the apps you already use — no new app to install, just pure ease.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(245,158,11,0.1); color: #f59e0b;">⏰</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">Automated Briefings</h3>
+              <p class="feature-desc-v3">Wake up to a personalized news digest, daily schedule, or habit reminder sent straight to your messaging app.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(167, 139, 250, 0.1); color: #a78bfa;">🎙️</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">Live Contextual Chat</h3>
+              <p class="feature-desc-v3">An assistant that truly understands context, tone, and your personal history for more natural, helpful conversations.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(16,185,129,0.1); color: #10b981;">🔗</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">App & File Integration</h3>
+              <p class="feature-desc-v3">Link your calendar, email, and files so your AI has the context it needs to manage your life and work seamlessly.</p>
+            </div>
+          </div>
+
+          <div class="feature-item-v3">
+            <div class="feature-icon-v3" style="background: rgba(255, 255, 255, 0.05); color: #ffffff;">🔒</div>
+            <div class="feature-text-v3">
+              <h3 class="feature-title-v3">100% Private Node</h3>
+              <p class="feature-desc-v3">Your data lives in a dedicated, encrypted node — never shared with corporations or used to train public models.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Addons Ecosystem Section -->
+    <section id="addons" class="addons-section">
+      <div class="addons-blob addons-blob-1"></div>
+      <div class="addons-blob addons-blob-2"></div>
+
+      <div class="container">
+
+        <!-- Kicker -->
+        <div class="addons-kicker">
+          <span class="addons-kicker-dot"></span>
+          <span>The Thoryn Ecosystem</span>
+        </div>
+
+        <!-- Headline -->
+        <div class="addons-hero-text">
+          <h2 class="section-title addons-headline">
+            Stop downloading apps.<br>
+            <span class="gradient-text">Just add an Addon.</span>
+          </h2>
+          <p class="addons-lead">
+            Thoryn is an AI <em>operating system</em>. Every addon plugs directly into your AI's memory — so from day one it already knows your goals, habits, and schedule. No onboarding. No syncing. No hassle.
+          </p>
+        </div>
+
+        <!-- Ecosystem Stats Bar -->
+        <div class="addons-stats-bar">
+          <div class="addons-stat">
+            <span class="addons-stat-num gradient-text">30+</span>
+            <span class="addons-stat-label">Addons Available</span>
+          </div>
+          <div class="addons-stat-divider"></div>
+          <div class="addons-stat">
+            <span class="addons-stat-num gradient-text">1-click</span>
+            <span class="addons-stat-label">Install, No Setup</span>
+          </div>
+          <div class="addons-stat-divider"></div>
+          <div class="addons-stat">
+            <span class="addons-stat-num gradient-text">&#8734;</span>
+            <span class="addons-stat-label">AI Memory Shared Across All</span>
+          </div>
+          <div class="addons-stat-divider"></div>
+          <div class="addons-stat">
+            <span class="addons-stat-num gradient-text">New</span>
+            <span class="addons-stat-label">Addons Added Monthly</span>
+          </div>
+        </div>
+
+        <!-- OS Analogy Banner -->
+        <div class="addons-os-banner">
+          <div class="os-banner-col">
+            <span class="os-banner-icon">📱</span>
+            <div>
+              <p class="os-banner-title">Old Way</p>
+              <p class="os-banner-desc">Download 6 separate apps. Set them all up. They never talk to each other.</p>
+            </div>
+          </div>
+          <div class="os-banner-arrow">→</div>
+          <div class="os-banner-col os-banner-col--highlight">
+            <span class="os-banner-icon">⚡</span>
+            <div>
+              <p class="os-banner-title gradient-text">Thoryn Way</p>
+              <p class="os-banner-desc">Install one Addon. Your AI instantly knows everything. Done.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Cards (4 big) -->
+        <div class="addons-section-label">Featured Addons</div>
+        <div class="addons-cards-grid">
+
+          <div class="addon-card-v2">
+            <div class="addon-card-v2-glow" style="--glow: #8b5cf6;"></div>
+            <div class="addon-card-v2-top">
+              <div class="addon-icon-v2" style="background: rgba(139,92,246,0.15); color: #8b5cf6;">📅</div>
+              <span class="addon-tag-v2 addon-tag-v2--purple">Most Popular</span>
+            </div>
+            <h3 class="addon-card-v2-title">Productivity Checklist</h3>
+            <p class="addon-card-v2-desc">Your AI remembers your tasks, deadlines, and priorities. Ask it to summarize your week, set reminders, and send a daily briefing to your phone — automatically.</p>
+            <ul class="addon-v2-bullets">
+              <li><span class="bullet-check">✓</span> Smart task memory</li>
+              <li><span class="bullet-check">✓</span> WhatsApp morning briefing</li>
+              <li><span class="bullet-check">✓</span> Deadline tracking</li>
+            </ul>
+            <div class="addon-card-v2-footer">
+              <span class="addon-plug-badge">🔌 1-click install</span>
+            </div>
+          </div>
+
+          <div class="addon-card-v2">
+            <div class="addon-card-v2-glow" style="--glow: #10b981;"></div>
+            <div class="addon-card-v2-top">
+              <div class="addon-icon-v2" style="background: rgba(16,185,129,0.15); color: #10b981;">💰</div>
+              <span class="addon-tag-v2 addon-tag-v2--green">Save Money</span>
+            </div>
+            <h3 class="addon-card-v2-title">Finance Tracker</h3>
+            <p class="addon-card-v2-desc">Log expenses by just chatting. Ask "how much did I spend on food?" and get an instant breakdown. Tracks budgets, warns of overruns, and builds PDF reports.</p>
+            <ul class="addon-v2-bullets">
+              <li><span class="bullet-check">✓</span> Natural language expense logging</li>
+              <li><span class="bullet-check">✓</span> Budget alerts via Telegram</li>
+              <li><span class="bullet-check">✓</span> Monthly PDF summaries</li>
+            </ul>
+            <div class="addon-card-v2-footer">
+              <span class="addon-plug-badge">🔌 1-click install</span>
+            </div>
+          </div>
+
+          <div class="addon-card-v2">
+            <div class="addon-card-v2-glow" style="--glow: #f59e0b;"></div>
+            <div class="addon-card-v2-top">
+              <div class="addon-icon-v2" style="background: rgba(245,158,11,0.15); color: #f59e0b;">🏃</div>
+              <span class="addon-tag-v2 addon-tag-v2--orange">New</span>
+            </div>
+            <h3 class="addon-card-v2-title">Health &amp; Gym Dashboard</h3>
+            <p class="addon-card-v2-desc">Tell your AI your fitness goals once. It builds your gym routine, tracks your meals, analyzes nutrition, and sends a daily health check-in on WhatsApp.</p>
+            <ul class="addon-v2-bullets">
+              <li><span class="bullet-check">✓</span> Personalized gym routines</li>
+              <li><span class="bullet-check">✓</span> Meal &amp; calorie tracking</li>
+              <li><span class="bullet-check">✓</span> Daily WhatsApp check-in</li>
+            </ul>
+            <div class="addon-card-v2-footer">
+              <span class="addon-plug-badge">🔌 1-click install</span>
+            </div>
+          </div>
+
+          <div class="addon-card-v2">
+            <div class="addon-card-v2-glow" style="--glow: #06b6d4;"></div>
+            <div class="addon-card-v2-top">
+              <div class="addon-icon-v2" style="background: rgba(6,182,212,0.15); color: #06b6d4;">🗺️</div>
+              <span class="addon-tag-v2 addon-tag-v2--cyan">Coming Soon</span>
+            </div>
+            <h3 class="addon-card-v2-title">Travel Planner</h3>
+            <p class="addon-card-v2-desc">Your AI knows your passport, preferences, and budget. Ask it to plan a 7-day trip and get a fully formatted PDF itinerary with hotels, routes, and local tips.</p>
+            <ul class="addon-v2-bullets">
+              <li><span class="bullet-check">✓</span> Smart itinerary PDFs</li>
+              <li><span class="bullet-check">✓</span> Budget-aware planning</li>
+              <li><span class="bullet-check">✓</span> Remembers your preferences</li>
+            </ul>
+            <div class="addon-card-v2-footer">
+              <span class="addon-plug-badge">🔌 1-click install</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ECOSYSTEM EXPLORER -->
+        <div class="addons-more-label">
+          <span class="addons-section-label" style="margin-bottom: 0;">And so much more in the Addon Store</span>
+          <span class="addons-more-count">+26 others</span>
+        </div>
+
+        <div class="addons-pill-scroll-wrap">
+          <div class="addons-pill-track addons-pill-track--right">
+            <div class="addons-pill-inner">
+              <span class="addon-pill">📚 Study Assistant</span>
+              <span class="addon-pill">🛒 Smart Grocery List</span>
+              <span class="addon-pill">🍳 Meal Prep Coach</span>
+              <span class="addon-pill">🧘 Mindfulness Journal</span>
+              <span class="addon-pill">💌 Email Summarizer</span>
+              <span class="addon-pill">📊 Weekly Report Builder</span>
+              <span class="addon-pill">🌱 Habit Tracker</span>
+              <span class="addon-pill">🎯 Goal Setter</span>
+              <span class="addon-pill">🗓️ Meeting Scheduler</span>
+              <span class="addon-pill">🔔 Smart Reminders</span>
+              <span class="addon-pill">📚 Study Assistant</span>
+              <span class="addon-pill">🛒 Smart Grocery List</span>
+              <span class="addon-pill">🍳 Meal Prep Coach</span>
+              <span class="addon-pill">🧘 Mindfulness Journal</span>
+              <span class="addon-pill">💌 Email Summarizer</span>
+              <span class="addon-pill">📊 Weekly Report Builder</span>
+              <span class="addon-pill">🌱 Habit Tracker</span>
+              <span class="addon-pill">🎯 Goal Setter</span>
+              <span class="addon-pill">🗓️ Meeting Scheduler</span>
+              <span class="addon-pill">🔔 Smart Reminders</span>
+            </div>
+          </div>
+          <div class="addons-pill-track addons-pill-track--left">
+            <div class="addons-pill-inner">
+              <span class="addon-pill">🏠 Home Assistant</span>
+              <span class="addon-pill">📈 Investment Watcher</span>
+              <span class="addon-pill">✍️ Writing Coach</span>
+              <span class="addon-pill">🌍 Language Tutor</span>
+              <span class="addon-pill">🎸 Music Practice Log</span>
+              <span class="addon-pill">👶 Parenting Journal</span>
+              <span class="addon-pill">🐾 Pet Care Tracker</span>
+              <span class="addon-pill">🧠 Second Brain Vault</span>
+              <span class="addon-pill">🔒 Password Vault (Local)</span>
+              <span class="addon-pill">📸 Photo Memory Tag</span>
+              <span class="addon-pill">🏠 Home Assistant</span>
+              <span class="addon-pill">📈 Investment Watcher</span>
+              <span class="addon-pill">✍️ Writing Coach</span>
+              <span class="addon-pill">🌍 Language Tutor</span>
+              <span class="addon-pill">🎸 Music Practice Log</span>
+              <span class="addon-pill">👶 Parenting Journal</span>
+              <span class="addon-pill">🐾 Pet Care Tracker</span>
+              <span class="addon-pill">🧠 Second Brain Vault</span>
+              <span class="addon-pill">🔒 Password Vault (Local)</span>
+              <span class="addon-pill">📸 Photo Memory Tag</span>
+            </div>
+          </div>
+          <div class="addons-pill-fade addons-pill-fade--left"></div>
+          <div class="addons-pill-fade addons-pill-fade--right"></div>
+        </div>
+
+        <p class="addons-pill-footnote">Every addon shares one AI brain. Install 5, install 20 — they all talk to each other.</p>
+
+        <!-- CTA Strip -->
+        <div class="addons-cta-strip">
+          <div class="addons-cta-left">
+            <p class="addons-cta-title">Your AI. Your rules. Zero app-switching.</p>
+            <p class="addons-cta-sub">Every addon is pre-wired to your memory, schedule, and preferences from the first second.</p>
+          </div>
+          <a href="#register" class="btn btn-primary addons-cta-btn">Get Early Access →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section id="compare" class="compare-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How Thoryn Compares</h2>
+          <p class="section-subtitle">A direct comparison of platform capabilities against standard chatbots and open-source models.</p>
+        </div>
+
+        <div class="compare-table-wrapper">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Capabilities</th>
+                <th class="highlight">Thoryn Node</th>
+                <th>SaaS Chatbots (ChatGPT/Claude)</th>
+                <th>OpenClaw / Hermes Agent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">Remembers You Permanently</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Hosted vector database memory</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-warn">~ Partial</span>
+                    <span class="status-desc">ChatGPT logs key facts; Claude resets per chat</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Persistent database memory integrations</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Connects to Your Apps & Data</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Managed tool & MCP connections</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-warn">~ Partial</span>
+                    <span class="status-desc">Claude desktop supports MCP; ChatGPT uses API Actions</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Native MCP (Skills are MCP-compliant)</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Zero Setup Hosting</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Fully hosted & managed node</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Shared public cloud servers</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-cross">✗ No</span>
+                    <span class="status-desc">Requires Docker & command-line setup</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Text via WhatsApp & Telegram</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Built-in messaging gateways</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-cross">✗ No</span>
+                    <span class="status-desc">Web browser or desktop app only</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-warn">~ Partial</span>
+                    <span class="status-desc">Requires manual bot token integrations</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Generates PDFs, Slides & Mindmaps</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Outputs ready-to-use print files</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-cross">✗ No</span>
+                    <span class="status-desc">Outputs raw chat text only</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-cross">✗ No</span>
+                    <span class="status-desc">Requires installing file compilers in code</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Automated Daily Schedules</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Runs recurring jobs automatically</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-cross">✗ No</span>
+                    <span class="status-desc">Manual prompt triggers only</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Supports scheduler loops & workflows</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">100% Private & Secured Data</td>
+                <td class="highlight-val" data-label="Thoryn Node">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Dedicated secure user nodes</span>
+                  </div>
+                </td>
+                <td data-label="SaaS Chatbots">
+                  <div class="cell-content">
+                    <span class="status-pill status-cross">✗ No</span>
+                    <span class="status-desc">Chats are analyzed to train models</span>
+                  </div>
+                </td>
+                <td data-label="OpenClaw / Hermes">
+                  <div class="cell-content">
+                    <span class="status-pill status-check">✓ Yes</span>
+                    <span class="status-desc">Local (But requires securing your own network)</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Consolidation Section -->
+    <section id="consolidation" class="consolidation-section">
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">One AI. Replaces Every Subscription.</h2>
+          <p class="section-subtitle">Stop paying for a dozen separate AI subscriptions. Thoryn handles it all under one private account.</p>
+        </div>
+
+        <div class="consolidation-grid">
+          <!-- The Old Way -->
+          <div class="consolidation-box old-way">
+            <h3 class="box-title">The Fragmented Stack</h3>
+            <p class="box-subtitle">Paying $80+/month for isolated, cloud-snooping tools.</p>
+            <ul class="consolidation-list">
+              <li>
+                <span class="icon-bad">❌</span>
+                <div>
+                  <strong>ChatGPT & Claude ($40/mo)</strong>
+                  <p>Forgets your goals, schedule, and writing style in every new thread.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-bad">❌</span>
+                <div>
+                  <strong>Search Engines ($20/mo)</strong>
+                  <p>Replies with raw web links but cannot compile styled files or reports.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-bad">❌</span>
+                <div>
+                  <strong>Slide & Presentation Makers ($15/mo)</strong>
+                  <p>Separate platforms you have to export from manually.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-bad">❌</span>
+                <div>
+                  <strong>Scheduling & Alert Apps ($10/mo)</strong>
+                  <p>Fragile webhook configurations just to get a morning summary text.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- The Thoryn Way -->
+          <div class="consolidation-box thoryn-way">
+            <div class="box-glowing-effect"></div>
+            <h3 class="box-title"><span class="gradient-text">The Thoryn Companion</span></h3>
+            <p class="box-subtitle">A single, secure workspace that integrates with your life.</p>
+            <ul class="consolidation-list">
+              <li>
+                <span class="icon-good">✓</span>
+                <div>
+                  <strong>Permanent Long-Term Memory</strong>
+                  <p>Remembers your favorite topics, style guides, recipes, and notes forever.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-good">✓</span>
+                <div>
+                  <strong>Printable PDF & Presentation Compiler</strong>
+                  <p>Writes structured PDFs, constructs PowerPoint slide decks, and builds mindmaps.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-good">✓</span>
+                <div>
+                  <strong>Native App Connections</strong>
+                  <p>Connect easily to your calendar, emails, files, or local workspace tools.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon-good">✓</span>
+                <div>
+                  <strong>Text via WhatsApp & Telegram</strong>
+                  <p>Chat with your assistant on the go and receive document downloads on your phone.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Got questions about our companion platform? Explore how Thoryn fits into your life.</p>
+        </div>
+        
+        <div class="faq-accordion">
+          <details class="faq-item">
+            <summary class="faq-summary">How does Thoryn "remember" users?</summary>
+            <div class="faq-content">
+              <p>Thoryn uses a secure, managed database system stored on your personal node. This creates a persistent user memory. When you share details about your schedule, preferences, projects, family guidelines, or notes, Thoryn stores them. The next time you ask a question or request a task, Thoryn uses this memory to reply with high relevance, meaning you never have to repeat your preferences.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">How does messaging via WhatsApp and Telegram work?</summary>
+            <div class="faq-content">
+              <p>Thoryn operates dedicated, managed instances for WhatsApp and Telegram. Once you register for a Thoryn AI account, you can start chatting immediately. You have the flexibility to interact with your assistant through these messaging channels, our powerful web application, or our dedicated native apps — all synchronized with your personal node.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Can Thoryn compile files like presentations and PDFs autonomously?</summary>
+            <div class="faq-content">
+              <p>Yes. Thoryn features built-in file compilers. You can ask the assistant to make a workout schedule, design study sheets, or structure a trip itinerary, and it will output printable PDF files, PowerPoint slide presentations, or interactive diagrams directly inside your chats.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">What does "secured managed nodes" mean for my privacy?</summary>
+            <div class="faq-content">
+              <p>With standard chatbots, your prompts, documents, and private chats are stored on corporate servers and often analyzed to train public AI models. Thoryn provisions a dedicated, isolated server node just for you. Your chats, memories, files, and links are fully private and never leaked or trained on.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Can I connect my existing calendar and email accounts?</summary>
+            <div class="faq-content">
+              <p>Yes. Thoryn is designed to integrate seamlessly with standard calendar and email providers. Once connected, your assistant can autonomously check your availability, schedule meetings, summarize unread emails, and provide context-aware reminders based on your actual data.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Does Thoryn support multiple languages?</summary>
+            <div class="faq-content">
+              <p>Absolutely. Thoryn is powered by high-performance multilingual models. You can chat, request research, and generate documents in over 40 languages, including English, Spanish, French, German, Chinese, and Japanese, with full cultural and linguistic nuance.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Is there a mobile app I need to download?</summary>
+            <div class="faq-content">
+              <p>You can, but you don't need to. While the primary way to interact with Thoryn is through WhatsApp or Telegram, our dedicated apps and web dashboard provide deep access to your Add-on dashboards, detailed analytics, and advanced node settings for more granular control.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">How long does it take to set up my personal node?</summary>
+            <div class="faq-content">
+              <p>Setup is nearly instantaneous. Once you secure a slot, our automated provisioning system deploys your dedicated node in less than 60 seconds. You'll receive your access credentials and simple instructions to link your messaging apps immediately.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pre-Registration / Early Access Section -->
+    <section id="register" class="register-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Request Early Access</h2>
+          <p class="section-subtitle">Secure your personal assistant node slot and lock in founding member pricing.</p>
+        </div>
+        
+        <div class="registration-wrapper">
+          <!-- Pre-Registration Form Card -->
+          <div class="register-card" id="register-card-container">
+            <form id="registration-form" class="registration-form">
+              <div class="form-group">
+                <label for="reg-name">Full Name</label>
+                <input type="text" id="reg-name" required placeholder="Jane Doe" autocomplete="name">
+              </div>
+              
+              <div class="form-group">
+                <label for="reg-email">Email Address</label>
+                <input type="email" id="reg-email" required placeholder="jane@example.com" autocomplete="email">
+              </div>
+              
+              <div class="form-group">
+                <label for="reg-usecase">Primary Use Case</label>
+                <select id="reg-usecase" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="personal">Everyday Organization, Schedule & WhatsApp</option>
+                  <option value="student">Study Companion: PDFs, Slides & Research</option>
+                  <option value="creator">Creative Projects, Mindmaps & Illustration Assets</option>
+                  <option value="developer">Developer integrations: Custom tools & skills</option>
+                </select>
+              </div>
+
+              <div class="form-terms">
+                <label class="checkbox-container-terms">
+                  <input type="checkbox" required checked>
+                  <span class="checkmark-terms"></span>
+                  <span class="terms-text">I agree to receive product updates and early access invitations.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Request Access Pass</span>
+                <span class="arrow">→</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Successful Registration Ticket (Hidden by default, shown via JS) -->
+          <div class="ticket-container" id="ticket-container" style="display: none;">
+            <div class="early-access-ticket" id="access-ticket">
+              <div class="ticket-glowing-glow"></div>
+              
+              <!-- Ticket Header -->
+              <div class="ticket-header">
+                <div class="ticket-brand">
+                  <img src="thoryn_logo.png" alt="Thoryn Logo" class="ticket-logo">
+                  <span>THORYN ACCESS PASS</span>
+                </div>
+                <div class="ticket-badge">VALIDATED</div>
+              </div>
+              
+              <!-- Ticket Content -->
+              <div class="ticket-body">
+                <div class="ticket-row">
+                  <div class="ticket-col">
+                    <span class="ticket-label">PASS HOLDER</span>
+                    <span class="ticket-val" id="ticket-user-name">JANE DOE</span>
+                  </div>
+                  <div class="ticket-col text-right">
+                    <span class="ticket-label">QUEUE RANK</span>
+                    <span class="ticket-val text-gradient" id="ticket-user-rank">#002,481</span>
+                  </div>
+                </div>
+                
+                <div class="ticket-row mt-15">
+                  <div class="ticket-col">
+                    <span class="ticket-label">EMAIL ADDRESS</span>
+                    <span class="ticket-val" id="ticket-user-email">jane@example.com</span>
+                  </div>
+                  <div class="ticket-col text-right">
+                    <span class="ticket-label">COMPANION CLASS</span>
+                    <span class="ticket-val" id="ticket-user-class">PERSONAL</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Ticket Footer / Barcode -->
+              <div class="ticket-footer">
+                <div class="ticket-barcode-wrapper">
+                  <div class="barcode">
+                    <!-- CSS Barcode Bars -->
+                    <span class="bar-thin"></span><span class="bar-thick"></span><span class="bar-thin"></span><span class="bar-medium"></span><span class="bar-thin"></span><span class="bar-thick"></span><span class="bar-medium"></span><span class="bar-thin"></span><span class="bar-thick"></span><span class="bar-thin"></span><span class="bar-thick"></span><span class="bar-medium"></span>
+                  </div>
+                  <span class="barcode-number" id="ticket-barcode-num">TH-42998377-X</span>
+                </div>
+              </div>
+            </div>
+            
+            <p class="ticket-instructions">
+              🎉 Registration successful! Your early access slot has been provisioned. A confirmation token has been logged to your local storage.
+            </p>
+            <button class="btn btn-secondary btn-sm" id="reset-registration-btn">Register Another Email</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="thoryn_logo.png" alt="Thoryn Logo" class="footer-logo">
+        <span class="footer-brand-name">Thoryn</span>
+        <p class="footer-brand-desc">The private, general-purpose AI companion for everyone.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#consolidation">Why Thoryn</a>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="#faq">Docs</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Thoryn. All rights reserved. Crafted with passion for families, students, and high performers.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
