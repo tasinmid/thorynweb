@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thoryn Browser — The World's First AI-Controlled Web Browser</title>
+  <meta name="description" content="Download Thoryn Browser v1.0.0. Sign in with your Thoryn account to let your personal AI agent autonomously browse, research, compare, fill forms, and execute tasks across the web on your behalf.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="thoryn_logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="browser-page">
+
+  <!-- Background Decorative Orbs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo-link">
+        <img src="thoryn_logo.png" alt="Thoryn Logo" class="nav-logo">
+        <span class="logo-text">Thoryn</span>
+        <span class="nav-sub-badge">BROWSER</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">← Main Platform</a>
+        <a href="#how-it-works" class="nav-item">How It Works</a>
+        <a href="#simulator" class="nav-item">Live Demo</a>
+        <a href="#features" class="nav-item">Capabilities</a>
+        <a href="#download-section" class="nav-item">Downloads</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#download-section" class="btn btn-primary btn-sm">Get Thoryn Browser</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="browser-hero-section">
+      <div class="container browser-hero-container">
+        
+        <div class="browser-hero-header text-center">
+          <div class="badge-wrapper">
+            <span class="hero-badge hero-badge-cyan">
+              <span class="badge-pulse"></span>
+              ✨ Introducing Thoryn Browser v1.0.0 • AI-Controlled Web Engine
+            </span>
+          </div>
+          
+          <h1 class="browser-hero-title">
+            The World's First Browser <br>
+            <span class="gradient-text">Driven By Your Personal AI Agent.</span>
+          </h1>
+          
+          <p class="browser-hero-subtitle">
+            Download the browser, sign in with your <strong>Thoryn account</strong>, and hand the controls to your personal AI agent. It autonomously navigates multi-tab research, compares prices, books travel, fills complex applications, and executes live web workflows on your behalf.
+          </p>
+
+          <!-- Dynamic OS Download Area -->
+          <div class="browser-hero-download-box">
+            <div class="hero-cta-group">
+              <button class="btn btn-primary btn-hero-download" id="hero-download-btn" data-download-trigger data-target-file="ThorynBrowser-Setup-1.0.0.exe" data-target-os="Windows">
+                <span class="hero-os-icon" id="hero-os-icon">🪟</span>
+                <span class="hero-download-main-text" id="hero-download-text">Download Thoryn for Windows</span>
+                <span class="badge-os-tag" id="hero-os-badge">v1.0.0</span>
+              </button>
+              
+              <button class="btn btn-secondary btn-older-versions" id="btn-older-versions" title="View historical releases archive">
+                <span>📦 Download older versions</span>
+              </button>
+            </div>
+
+            <p class="hero-download-meta" id="hero-download-sub">
+              Windows 10/11 64-bit • v1.0.0 Official Release • SHA-256 Verified
+            </p>
+
+            <div class="hero-os-switchers">
+              <span>Also available for:</span>
+              <a href="#download-section" class="os-quick-link" data-os="macos">🍏 macOS (Apple Silicon & Intel)</a>
+              <span class="sep">•</span>
+              <a href="#download-section" class="os-quick-link" data-os="windows">🪟 Windows (x64 & ARM)</a>
+              <span class="sep">•</span>
+              <a href="#download-section" class="os-quick-link" data-os="linux">🐧 Linux (.deb, .AppImage, .rpm)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive AI Browser UI Showcase -->
+        <div class="browser-showcase-container" id="simulator">
+          <div class="showcase-topbar">
+            <div class="showcase-title-wrap">
+              <span class="showcase-tag">Interactive Simulation</span>
+              <h3 class="showcase-heading">See the Thoryn AI Agent in Action</h3>
+            </div>
+            
+            <div class="simulator-presets">
+              <button class="simulator-task-btn active" data-task="travel">
+                <span>✈️ Flight Booking</span>
+              </button>
+              <button class="simulator-task-btn" data-task="research">
+                <span>📑 Multi-Paper Synthesis</span>
+              </button>
+              <button class="simulator-task-btn" data-task="ecommerce">
+                <span>🛒 Price Drop & Cart Hold</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Browser Window Frame -->
+          <div class="browser-window-mockup">
+            <!-- Window Titlebar -->
+            <div class="mockup-titlebar">
+              <div class="window-controls">
+                <span class="control-dot dot-red"></span>
+                <span class="control-dot dot-yellow"></span>
+                <span class="control-dot dot-green"></span>
+              </div>
+              
+              <div class="mockup-tabs">
+                <div class="mockup-tab active">
+                  <span class="tab-ai-icon">🤖</span>
+                  <span class="tab-title">Thoryn Agent Session</span>
+                  <span class="tab-close">×</span>
+                </div>
+                <div class="mockup-tab">
+                  <span class="tab-title">Google Flights</span>
+                  <span class="tab-close">×</span>
+                </div>
+                <div class="mockup-tab">
+                  <span class="tab-title">Air France Portal</span>
+                  <span class="tab-close">×</span>
+                </div>
+                <div class="mockup-tab tab-new">+</div>
+              </div>
+              
+              <div class="mockup-account-pill">
+                <span class="pill-avatar">T</span>
+                <span class="pill-status-dot"></span>
+                <span class="pill-name">Tasin's Thoryn Account</span>
+              </div>
+            </div>
+
+            <!-- Browser Navigation / URL Bar -->
+            <div class="mockup-toolbar">
+              <div class="toolbar-nav-buttons">
+                <button class="nav-circle-btn">‹</button>
+                <button class="nav-circle-btn">›</button>
+                <button class="nav-circle-btn">↻</button>
+              </div>
+              
+              <div class="mockup-address-bar">
+                <span class="url-lock">🔒</span>
+                <span class="url-text" id="sim-url-text">https://flights.thoryn.ai/search?from=SFO&to=CDG&date=2026-09-15</span>
+                <span class="url-tag" id="sim-action-badge">Autonomous Flight Booking</span>
+              </div>
+
+              <div class="mockup-agent-toggle">
+                <span class="agent-pulse"></span>
+                <span class="agent-mode-text">AI PILOT: ON</span>
+              </div>
+            </div>
+
+            <!-- Browser Split View Area -->
+            <div class="mockup-viewport-split">
+              <!-- Left: Webview Render -->
+              <div class="mockup-webview">
+                <div class="webview-banner">
+                  <span class="webview-indicator">🌐 Live Web Session (Automated DOM Stream)</span>
+                  <span class="webview-shield">🛡️ Local Sandboxed Sandbox</span>
+                </div>
+                
+                <div class="webview-body" id="sim-webview-content">
+                  <!-- Injected via JavaScript based on active preset -->
+                </div>
+              </div>
+
+              <!-- Right: Thoryn Agent Sidecar Copilot -->
+              <div class="mockup-sidecar">
+                <div class="sidecar-header">
+                  <div class="sidecar-title">
+                    <img src="thoryn_logo.png" alt="Thoryn" class="sidecar-logo">
+                    <span>Thoryn Copilot Bridge</span>
+                  </div>
+                  <span class="sidecar-badge">v1.0.0 Core</span>
+                </div>
+                
+                <div class="sidecar-status-box">
+                  <span class="status-icon">⚡</span>
+                  <div class="status-details">
+                    <div class="status-label">Agent State</div>
+                    <div class="status-value" id="sim-agent-status">Comparing 3 airlines & calculating baggage rules</div>
+                  </div>
+                </div>
+
+                <div class="sidecar-stream-section">
+                  <div class="stream-header">
+                    <span>Real-time Action Log</span>
+                    <span class="stream-latency">12ms bridge</span>
+                  </div>
+                  <div class="sim-agent-logs-container" id="sim-agent-logs">
+                    <!-- Logs streamed dynamically by JavaScript -->
+                  </div>
+                </div>
+
+                <div class="sidecar-footer-actions">
+                  <div class="approval-card">
+                    <div class="approval-text">
+                      <strong>Human-in-the-loop Guard:</strong>
+                      <span>Agent prepared the checkout. Confirm 1-click dispatch.</span>
+                    </div>
+                    <div class="approval-btns">
+                      <button class="btn btn-success-small" data-download-trigger data-target-file="Thoryn-Checkout-Approved">Approve Action</button>
+                      <button class="btn btn-ghost-small">Manual Takeover</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="browser-how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Seamless Architecture</span>
+          <h2 class="section-title">How Thoryn Browser Works</h2>
+          <p class="section-subtitle">A native browser built from the ground up for agentic autonomy, extreme speed, and uncompromised user privacy.</p>
+        </div>
+
+        <div class="how-steps-grid">
+          
+          <div class="how-step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon-wrap">
+              <span class="step-icon">⚡</span>
+            </div>
+            <h3 class="step-title">Download & Install</h3>
+            <p class="step-desc">
+              Lightweight native installer available for macOS (Apple Silicon & Intel), Windows 10/11, and Linux. Built on modern Chromium with zero bloat.
+            </p>
+            <div class="step-detail-tag">Instant 30-Second Setup</div>
+          </div>
+
+          <div class="how-step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon-wrap">
+              <span class="step-icon">🔑</span>
+            </div>
+            <h3 class="step-title">Sign In With Thoryn</h3>
+            <p class="step-desc">
+              Log into your existing Thoryn account. Your agent's memory vault, personal preferences, connected services, and custom instructions sync instantly.
+            </p>
+            <div class="step-detail-tag">Secure Local Keyring</div>
+          </div>
+
+          <div class="how-step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon-wrap">
+              <span class="step-icon">🗣️</span>
+            </div>
+            <h3 class="step-title">Delegate Web Workflows</h3>
+            <p class="step-desc">
+              Tell your Thoryn agent what you need in plain English. Watch it open tabs, extract deep data, solve complex search queries, and fill multi-step forms.
+            </p>
+            <div class="step-detail-tag">Autonomous DOM Navigation</div>
+          </div>
+
+          <div class="how-step-card">
+            <div class="step-number">04</div>
+            <div class="step-icon-wrap">
+              <span class="step-icon">🛡️</span>
+            </div>
+            <h3 class="step-title">Full Privacy & Control</h3>
+            <p class="step-desc">
+              You always stay in the driver's seat. Sensitive actions like credit card payments or final form submissions require explicit human authorization.
+            </p>
+            <div class="step-detail-tag">Human-in-the-Loop Safeguard</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities Grid -->
+    <section class="browser-features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineered for Autonomy</span>
+          <h2 class="section-title">Built for the Age of AI Agents</h2>
+          <p class="section-subtitle">Why traditional browsers with brittle extensions can't match a natively AI-controlled browser.</p>
+        </div>
+
+        <div class="capabilities-grid">
+          
+          <div class="capability-card">
+            <div class="cap-icon-box">🧠</div>
+            <h4 class="cap-title">Native Agent Bridge</h4>
+            <p class="cap-desc">Direct bi-directional WebSocket and DOM accessibility tree integration allows Thoryn agents to interact with web pages with human-like precision and 10x faster response times.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="cap-icon-box">📑</div>
+            <h4 class="cap-title">Parallel Multi-Tab Synthesis</h4>
+            <p class="cap-desc">Instruct your agent to research across 20 websites simultaneously. Thoryn Browser gathers, cross-checks, and synthesizes the findings into clean summaries and printable reports.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="cap-icon-box">🔒</div>
+            <h4 class="cap-title">Local Session Vault</h4>
+            <p class="cap-desc">Your login cookies, passwords, and sessions remain stored securely on your local device with AES-256 encryption. Raw credentials are never transmitted to cloud servers.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="cap-icon-box">⚡</div>
+            <h4 class="cap-title">Ultra-Low RAM Footprint</h4>
+            <p class="cap-desc">Optimized memory management suspends background agent tabs when idle and utilizes GPU acceleration for responsive multi-tasking without slowing down your computer.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="cap-icon-box">🛑</div>
+            <h4 class="cap-title">One-Click Human Takeover</h4>
+            <p class="cap-desc">Take control of the mouse and keyboard at any millisecond. Pause the agent, inspect its plan, modify input fields, or resume autonomous execution whenever you want.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="cap-icon-box">🧩</div>
+            <h4 class="cap-title">Chrome Extension Support</h4>
+            <p class="cap-desc">Enjoy full compatibility with your favorite Chrome extensions, password managers, ad-blockers, and developer tools right out of the box.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Matrix Section -->
+    <section class="browser-download-section" id="download-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct Downloads</span>
+          <h2 class="section-title">Download Thoryn Browser v1.0.0</h2>
+          <p class="section-subtitle">Choose your operating system below for official binary packages and standalone builds.</p>
+        </div>
+
+        <!-- Platform Tabs -->
+        <div class="platform-tabs-wrapper">
+          <div class="platform-tab-buttons">
+            <button class="platform-tab-btn" data-platform="windows">
+              <span>🪟 Windows</span>
+            </button>
+            <button class="platform-tab-btn" data-platform="macos">
+              <span>🍏 macOS</span>
+            </button>
+            <button class="platform-tab-btn" data-platform="linux">
+              <span>🐧 Linux</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab Panels Container -->
+        <div class="platform-panels-container">
+          
+          <!-- Windows Panel -->
+          <div class="platform-panel" data-platform="windows">
+            <div class="download-cards-grid">
+              
+              <div class="download-card featured-download-card">
+                <div class="card-featured-badge">Recommended</div>
+                <div class="dl-card-icon">🪟</div>
+                <h4 class="dl-card-title">Windows 64-bit (x64)</h4>
+                <p class="dl-card-desc">Standard installer for Windows 10 & Windows 11 (64-bit systems).</p>
+                <div class="dl-meta">
+                  <span>File: <code>ThorynBrowser-Setup-1.0.0.exe</code></span>
+                  <span>Size: 96.4 MB</span>
+                </div>
+                <button class="btn btn-primary btn-block" data-download-trigger data-target-file="ThorynBrowser-Setup-1.0.0.exe" data-target-os="Windows (x64)">
+                  <span>Download .EXE Installer</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+              <div class="download-card">
+                <div class="dl-card-icon">📦</div>
+                <h4 class="dl-card-title">Windows Portable (ZIP)</h4>
+                <p class="dl-card-desc">Standalone portable package. No administrator privileges or installation required.</p>
+                <div class="dl-meta">
+                  <span>File: <code>ThorynBrowser-Portable-1.0.0.zip</code></span>
+                  <span>Size: 102.1 MB</span>
+                </div>
+                <button class="btn btn-secondary btn-block" data-download-trigger data-target-file="ThorynBrowser-Portable-1.0.0.zip" data-target-os="Windows (Portable)">
+                  <span>Download Portable .ZIP</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+              <div class="download-card">
+                <div class="dl-card-icon">⚡</div>
+                <h4 class="dl-card-title">Windows ARM64</h4>
+                <p class="dl-card-desc">Native build optimized for Snapdragon X Elite and Surface ARM devices.</p>
+                <div class="dl-meta">
+                  <span>File: <code>ThorynBrowser-ARM64-1.0.0.exe</code></span>
+                  <span>Size: 94.8 MB</span>
+                </div>
+                <button class="btn btn-secondary btn-block" data-download-trigger data-target-file="ThorynBrowser-ARM64-1.0.0.exe" data-target-os="Windows (ARM64)">
+                  <span>Download ARM64 .EXE</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- macOS Panel -->
+          <div class="platform-panel" data-platform="macos">
+            <div class="download-cards-grid">
+              
+              <div class="download-card featured-download-card">
+                <div class="card-featured-badge">Apple Silicon</div>
+                <div class="dl-card-icon">🍏</div>
+                <h4 class="dl-card-title">macOS Apple Silicon (M1 / M2 / M3 / M4)</h4>
+                <p class="dl-card-desc">Native ARM64 architecture build for maximum battery life and performance.</p>
+                <div class="dl-meta">
+                  <span>File: <code>ThorynBrowser-1.0.0-arm64.dmg</code></span>
+                  <span>Size: 118.2 MB • macOS 12 Monterey+</span>
+                </div>
+                <button class="btn btn-primary btn-block" data-download-trigger data-target-file="ThorynBrowser-1.0.0-arm64.dmg" data-target-os="macOS (Apple Silicon)">
+                  <span>Download .DMG (Apple Silicon)</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+              <div class="download-card">
+                <div class="dl-card-icon">💻</div>
+                <h4 class="dl-card-title">macOS Intel (x86_64)</h4>
+                <p class="dl-card-desc">Compatible with Intel-based MacBook, iMac, and Mac Mini computers.</p>
+                <div class="dl-meta">
+                  <span>File: <code>ThorynBrowser-1.0.0-x64.dmg</code></span>
+                  <span>Size: 124.5 MB • macOS 11 Big Sur+</span>
+                </div>
+                <button class="btn btn-secondary btn-block" data-download-trigger data-target-file="ThorynBrowser-1.0.0-x64.dmg" data-target-os="macOS (Intel)">
+                  <span>Download .DMG (Intel)</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Linux Panel -->
+          <div class="platform-panel" data-platform="linux">
+            <div class="download-cards-grid">
+              
+              <div class="download-card featured-download-card">
+                <div class="card-featured-badge">Universal</div>
+                <div class="dl-card-icon">🐧</div>
+                <h4 class="dl-card-title">Linux AppImage</h4>
+                <p class="dl-card-desc">Runs on all major Linux distributions without installation.</p>
+                <div class="dl-meta">
+                  <span>File: <code>ThorynBrowser-1.0.0.AppImage</code></span>
+                  <span>Size: 92.6 MB</span>
+                </div>
+                <button class="btn btn-primary btn-block" data-download-trigger data-target-file="ThorynBrowser-1.0.0.AppImage" data-target-os="Linux (AppImage)">
+                  <span>Download .AppImage</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+              <div class="download-card">
+                <div class="dl-card-icon">📦</div>
+                <h4 class="dl-card-title">Ubuntu / Debian (.deb)</h4>
+                <p class="dl-card-desc">Native package for Ubuntu 20.04+, Debian 11+, and Linux Mint.</p>
+                <div class="dl-meta">
+                  <span>File: <code>thoryn-browser_1.0.0_amd64.deb</code></span>
+                  <span>Size: 88.3 MB</span>
+                </div>
+                <button class="btn btn-secondary btn-block" data-download-trigger data-target-file="thoryn-browser_1.0.0_amd64.deb" data-target-os="Linux (Debian/Ubuntu)">
+                  <span>Download .DEB Package</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+              <div class="download-card">
+                <div class="dl-card-icon">⚙️</div>
+                <h4 class="dl-card-title">Fedora / RedHat (.rpm)</h4>
+                <p class="dl-card-desc">Native RPM package for Fedora 36+, RHEL, and openSUSE.</p>
+                <div class="dl-meta">
+                  <span>File: <code>thoryn-browser-1.0.0.x86_64.rpm</code></span>
+                  <span>Size: 89.1 MB</span>
+                </div>
+                <button class="btn btn-secondary btn-block" data-download-trigger data-target-file="thoryn-browser-1.0.0.x86_64.rpm" data-target-os="Linux (RPM)">
+                  <span>Download .RPM Package</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+              <div class="download-card">
+                <div class="dl-card-icon">📂</div>
+                <h4 class="dl-card-title">Tarball Archive (.tar.gz)</h4>
+                <p class="dl-card-desc">Portable compressed binary for custom environments and Arch Linux.</p>
+                <div class="dl-meta">
+                  <span>File: <code>thoryn-browser-1.0.0.tar.gz</code></span>
+                  <span>Size: 75.9 MB</span>
+                </div>
+                <button class="btn btn-secondary btn-block" data-download-trigger data-target-file="thoryn-browser-1.0.0.tar.gz" data-target-os="Linux (Tarball)">
+                  <span>Download .tar.gz</span>
+                  <span class="btn-arrow">↓</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Older Versions & Historical Archive Banner -->
+        <div class="older-versions-card">
+          <div class="older-card-content">
+            <div class="older-card-icon">📦</div>
+            <div class="older-card-text">
+              <h4>Looking for older versions or release archives?</h4>
+              <p>View previous builds, migration guides, and changelog history.</p>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-older-versions">
+            <span>Download older versions</span>
+          </button>
+        </div>
+
+        <!-- System Requirements Table -->
+        <div class="requirements-box">
+          <h4 class="req-title">System Requirements (v1.0.0)</h4>
+          <div class="req-grid">
+            <div class="req-item">
+              <span class="req-label">macOS</span>
+              <span class="req-val">macOS 11.0 (Big Sur) or higher. Native Apple Silicon (M1+) and Intel x64.</span>
+            </div>
+            <div class="req-item">
+              <span class="req-label">Windows</span>
+              <span class="req-val">Windows 10 (64-bit) or Windows 11. ARM64 supported.</span>
+            </div>
+            <div class="req-item">
+              <span class="req-label">Linux</span>
+              <span class="req-val">glibc 2.28+ (Ubuntu 20.04+, Debian 11+, Fedora 36+, Arch Linux).</span>
+            </div>
+            <div class="req-item">
+              <span class="req-label">Hardware</span>
+              <span class="req-val">Minimum 4 GB RAM (8 GB recommended), 500 MB disk storage.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="browser-faq-section" id="faq">
+      <div class="container container--narrow">
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Everything You Need to Know</h2>
+          <p class="section-subtitle">Common questions regarding Thoryn Browser, agent permissions, and security.</p>
+        </div>
+
+        <div class="browser-faq-list">
+          
+          <div class="browser-faq-item active">
+            <button class="browser-faq-question">
+              <span>How does my Thoryn account connect with the browser?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="browser-faq-answer">
+              <p>When you launch Thoryn Browser, simply click "Sign In" and authenticate with your existing Thoryn credentials. The browser establishes an encrypted local bridge to your Thoryn assistant, syncing your memory vault, custom preferences, and automated routines instantly.</p>
+            </div>
+          </div>
+
+          <div class="browser-faq-item">
+            <button class="browser-faq-question">
+              <span>Can the AI agent buy things or access my bank without permission?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="browser-faq-answer">
+              <p><strong>No.</strong> Thoryn Browser uses strict <em>Human-in-the-Loop Safeguards</em>. Whenever a task involves financial transactions, payment details, password changes, or deleting data, the agent pauses and asks for your explicit 1-click confirmation before proceeding.</p>
+            </div>
+          </div>
+
+          <div class="browser-faq-item">
+            <button class="browser-faq-question">
+              <span>How is this different from a Chrome or Firefox AI extension?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="browser-faq-answer">
+              <p>Browser extensions run inside sandboxed iframes with limited DOM access, high latency, and frequent breakage on complex websites. Thoryn Browser is built at the engine level, allowing seamless multi-tab coordination, persistent session retention, direct accessibility tree navigation, and background task execution.</p>
+            </div>
+          </div>
+
+          <div class="browser-faq-item">
+            <button class="browser-faq-question">
+              <span>Can I use my existing Chrome extensions and bookmarks?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="browser-faq-answer">
+              <p>Yes! Because Thoryn Browser is built on a high-performance Chromium foundation, you can import your Chrome bookmarks and install any extension from the Chrome Web Store with full compatibility.</p>
+            </div>
+          </div>
+
+          <div class="browser-faq-item">
+            <button class="browser-faq-question">
+              <span>Is Thoryn Browser free to download?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="browser-faq-answer">
+              <p>Version 1.0.0 is free to download and use for all Thoryn community members and early access pass holders. Your agent capabilities correspond to your Thoryn plan allowances.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="browser-cta-section">
+      <div class="container">
+        <div class="browser-cta-card">
+          <div class="cta-glow"></div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Experience the AI-Controlled Web?</h2>
+            <p class="cta-subtitle">Download Thoryn Browser v1.0.0 today and let your personal agent handle the tedious web work.</p>
+            <div class="cta-buttons">
+              <a href="#download-section" class="btn btn-primary btn-lg">
+                <span>Download Thoryn Browser v1.0.0</span>
+                <span class="btn-arrow">↓</span>
+              </a>
+              <a href="index.html" class="btn btn-secondary">
+                <span>Explore Thoryn Platform</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="thoryn_logo.png" alt="Thoryn Logo" class="footer-logo">
+        <span class="footer-brand-name">Thoryn</span>
+        <p class="footer-brand-desc">The private, general-purpose AI companion and browser for everyone.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="index.html#features">Platform Features</a>
+          <a href="browser.html">AI Browser (v1.0.0)</a>
+          <a href="index.html#addons">Addons</a>
+          <a href="index.html#consolidation">Why Thoryn</a>
+        </div>
+        <div class="footer-col">
+          <h4>Downloads</h4>
+          <a href="#download-section" class="os-quick-link" data-os="macos">macOS Build</a>
+          <a href="#download-section" class="os-quick-link" data-os="windows">Windows Build</a>
+          <a href="#download-section" class="os-quick-link" data-os="linux">Linux Build</a>
+          <a href="#" class="btn-older-versions">Older Releases</a>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="index.html#faq">Docs</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Thoryn. All rights reserved. Built for high performance and autonomous agency.</p>
+    </div>
+  </footer>
+
+  <!-- Older Versions Interactive Modal Dialog -->
+  <div class="older-versions-modal-backdrop" id="older-versions-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="older-versions-modal-dialog">
+      <button class="modal-close-btn" id="close-older-modal-btn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header-icon">
+        <span class="modal-icon-badge">📦</span>
+      </div>
+      
+      <h3 class="modal-title" id="modal-title">No Older Versions Available</h3>
+      
+      <div class="modal-body-content">
+        <div class="modal-badge-row">
+          <span class="modal-version-tag">Current Release: v1.0.0</span>
+          <span class="modal-status-tag">Inaugural Launch</span>
+        </div>
+        
+        <p class="modal-description">
+          <strong>No older version is available right now.</strong> Version <strong>1.0.0</strong> is our very first public launch of Thoryn Browser!
+        </p>
+        
+        <div class="modal-info-card">
+          <div class="info-card-header">
+            <span class="info-icon">✨</span>
+            <strong>What's in Version 1.0.0?</strong>
+          </div>
+          <ul class="modal-bullet-list">
+            <li>Native AI Agent Bridge for autonomous DOM navigation</li>
+            <li>One-click Thoryn account synchronization</li>
+            <li>Human-in-the-loop permission guardrails for sensitive actions</li>
+            <li>Universal support for macOS, Windows 10/11, and Linux</li>
+          </ul>
+        </div>
+
+        <p class="modal-subtext">
+          As future updates roll out, historical build archives and changelog notes will be accessible right here.
+        </p>
+      </div>
+
+      <div class="modal-footer-actions">
+        <a href="#download-section" class="btn btn-primary" id="modal-download-v1-btn" onclick="closeOlderVersionsModal()">
+          <span>Download Version 1.0.0</span>
+          <span class="btn-arrow">↓</span>
+        </a>
+        <button class="btn btn-secondary" id="modal-dismiss-btn">
+          <span>Got it, Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="browser.js?v=1.0.0"></script>
+</body>
+</html>

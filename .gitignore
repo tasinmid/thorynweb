@@ -1,0 +1,46 @@
+# Dependencies & Node artifacts (Website is 100% static)
+node_modules/
+package.json
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Scratch & Presentation Generation Tools
+create_native_pptx.js
+pitch_deck.html
+cap_table.html
+
+# Generated Documents & Data Files
+*.pptx
+*.pdf
+*.csv
+
+# Scratch / Unused Assets
+jarvis_hud.jpg
+tahmid.jpeg
+*.svg
+
+# OS & Environment Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Temporary / Log files
+*.log
+.temp/
+.cache/
